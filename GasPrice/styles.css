@@ -1,0 +1,93 @@
+body {
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   height: 100vh; /* Definindo a altura do corpo como 100% da viewport */
+   font-family: Arial, sans-serif;
+   margin: 0;
+   padding: 0;
+   background-color: #201f1f;
+   position: relative; /* Necessário para o posicionamento do pseudoelemento */
+}
+
+body::before {
+   content: ""; /* Cria um pseudoelemento antes do conteúdo do corpo */
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-image: url('GALAO.jpg');
+   background-size: cover; /* Garante que a imagem cubra toda a área */
+   filter: blur(10px); /* Aplica o efeito de desfoque com 5 pixels */
+   z-index: -1; /* Coloca o pseudoelemento atrás de todo o conteúdo */
+}
+
+
+.container {
+   width: 100%; /* Ocupa toda a largura da tela */
+   max-width: 500px; /* Limitando a largura máxima */
+   padding: 50px;
+   background-color: #fff;
+   border-radius: 5px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   box-sizing: border-box; /* Considera padding e borda na largura total */
+}
+
+h1 {
+   text-align: center;
+   color: #333;
+}
+
+form {
+   text-align: center;
+}
+
+label {
+   display: block;
+   margin-bottom: 5px;
+   color: #555;
+}
+
+select, input[type="number"], button {
+   width: 100%;
+   padding: 10px;
+   margin-bottom: 15px;
+   border: 1px solid #fffefe;
+   border-radius: 5%;
+   box-sizing: border-box;
+}
+
+button {
+   background-color: #00881d;
+   color: #fff;
+   cursor: pointer;
+}
+
+button:hover {
+   color: black;
+   background-color: #0df940;
+}
+
+#resultado {
+   text-align: center;
+   font-size: 18px;
+   font-weight: bold;
+   margin-top: 20px;
+}
+
+.container2 {
+   width: 100%; /* Ocupa toda a largura da tela */
+   max-width: 500px; /* Limitando a largura máxima */
+   padding: 50px;
+   background-color: #fff;
+   border-radius: 5px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#result {
+   text-align: center;
+   font-weight: bold;
+   font-size: 18px;
+   margin-top: 20px;
+}

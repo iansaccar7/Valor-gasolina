@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Abastecimento</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" type="/imagex.png" href="icon.png">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Abastecimento</h1> 
+        <form>
+            <div class="Gasolina">
+                <label for="opcoes"><b>Escolha uma opção:</b></label>
+                <select id="opcoes" name="opcoes">
+                    <option value="opcao1">Gasolina Comum</option>
+                    <option value="opcao2">Gasolina Adtivada</option>
+                    <option value="opcao3">Etanol</option>
+                    <option value="opcao4">Óleo Diesel</option>
+                    <option value="opcao5">Óleo Diesel S10</option>
+                </select>
+                <label for="litros"><b>litros</b></label>
+                <input type="number" id="litros" min="0" max="110" step="0.01">
+                <button type="button" id="calcular"> <b> Calcular Custo Total </b> </button>
+            </div>
+        </form> 
+        <div id="resultado"></div> 
+    </div>
+
+    <div class="container2">
+        <h1>Calcule qual a quilometragem por litro no seu carro</h1>
+        <form id="centro">
+            <div class="km">                
+                <label for="quilometro"><b> Quilometragem percorrida </b></label>
+                <!-- Corrigindo o ID do campo de entrada -->
+                <input type="number" id="quilometro" min="0" max="100000" step="0.01">
+                <label for="litros2"><b> Quantidade Abastecida em Litros </b></label>
+                <input type="number" id="litros2" min="0" max="110" step="0.01">
+                <button type="button" id="calcularQuilometragem"> <b> Calcular </b> </button>
+            </div> 
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
